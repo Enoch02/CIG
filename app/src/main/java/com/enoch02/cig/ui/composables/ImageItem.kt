@@ -29,7 +29,6 @@ fun ImageItem(
                 .data(link)
                 .crossfade(true)
                 .build(),
-            //alignment = Alignment,
             contentDescription = null,
             onSuccess = { onLoadingComplete.invoke() }
         )

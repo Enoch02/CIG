@@ -34,7 +34,6 @@ class MainViewModel : ViewModel() {
                 val headers =
                     mapOf("Content-Type" to "application/json", "Authorization" to "Bearer $apiKey")
                 generatedImage = apiService.generateImages(
-                    //key = "Authorization: Bearer $apiKey",
                     headers = headers,
                     request = request
                 ).data
